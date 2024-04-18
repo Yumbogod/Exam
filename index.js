@@ -106,16 +106,16 @@ async function askName() {
     const answers = await inquirer.prompt({
       name: 'question_5',
       type: 'list',
-      message: 'Cual es mi deporte favorito?\n',
+      message: 'Cual es mi pasatiempo favoritos?\n',
       choices: [
-        'Voli',
-        'Padel',
-        'Futbol',
-        'Tenis',
+        'Peliculas',
+        'Series',
+        'Dibujar',
+        'Jugar',
       ],
     });
   
-    return handleAnswer(answers.question_5 === 'Padel');
+    return handleAnswer(answers.question_5 === 'Jugar');
   }
 
 
